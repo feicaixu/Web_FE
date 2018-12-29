@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/login.css/login_main.css" />
+		<title>登陆</title>	
+		<script type="text/javascript">
+		window.onload = function(){
+			var config = {
+				vx: 4,
+				vy:  4,
+				height: 2,
+				width: 2,
+				count: 100,
+				color: "121, 162, 185",
+				stroke: "100,200,180",
+				dist: 6000,
+				e_dist: 20000,
+				max_conn: 10
+			}
+			CanvasParticle(config);
+		}
+	</script>
+	<script type="text/javascript" src="js/canvas-particle.js"></script>
+	</head>
+	<body>
+		<div class="loginbox">
+			<h3>用户登陆</h3>
+			<form id="checksubmit" method="post" onsubmit="return checkuser()" action="loginchk.php">
+			<input id="username" maxlength="20" name="username" onchange="return checkuname()" onkeyup="this.value=this.value.replace(/[^\w]/g,'')" onpaste="this.value=this.value.replace(/[^\w]/g,'')" placeholder="请输入6-20位用户名" type="text" required="required">
+			<span id="warringbox1" style="position: absolute;top: 145px;right: 50px;"></span>
+			<input id="password" maxlength="20" name="password" onchange="return checkupass()" onkeyup="this.value=this.value.replace(/[^\w]/g,'')" onpaste="this.value=this.value.replace(/[^\w]/g,'')" placeholder="请输入密码" type="password" required="required">
+			<span id="warringbox2" style="position: absolute;top: 210px;right: 50px;"></span>
+			<input class="loginbtn" name="botton" value="登陆" type="submit">
+			</form>
+			<span>
+				<a class="forgetpwd" href="forgetpwd.html">忘记密码</a>
+			</span>
+			<span>				
+				<a class="register" href="register.html">还没有账号？立即注册</a>
+			</span>
+		</div>
+		<script type="text/javascript" src="js/logincheck.js" ></script>
+	</body>
+</html>

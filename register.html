@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/reigister.css/register_main.css" />
+		<title>注册</title>
+		
+		<script type="text/javascript">
+		window.onload = function(){
+			var config = {
+				vx: 4,
+				vy:  4,
+				height: 2,
+				width: 2,
+				count: 100,
+				color: "121, 162, 185",
+				stroke: "100,200,180",
+				dist: 6000,
+				e_dist: 20000,
+				max_conn: 10
+			}
+			CanvasParticle(config);
+		}
+	</script>
+	<script type="text/javascript" src="js/canvas-particle.js"></script>
+	</head>
+	<body>
+		<div class="registerbox">
+			<h3>用户注册</h3>
+			<form id="checksubmit" action="registerchk.php" method="post" onsubmit="return checkuser()">
+
+			<input id="username" name="username" onchange="return checkuname()" placeholder="请输入用户名" type="text" required="required">
+			<span id="warringbox1" style="position: absolute;top: 145px;right: 50px;"></span>
+			<input id="password" name="password" onchange="return checkupass()" placeholder="请输入密码" type="password" required="required">
+			<span id="warringbox2" style="position: absolute;top: 210px;right: 50px;"></span>
+			<input id="email" name="email" onchange="return checkemail()" placeholder="请输入邮箱" type="text" required="required">
+			<span id="warringbox3" style="position: absolute;top: 275px;right: 50px;"></span>
+			<input type="submit" name="submit" class="registerbtn" value="注册">
+			</form>
+		</div>
+		<script type="text/javascript" src="js/registercheck.js" ></script>
+	</body>
+</html>

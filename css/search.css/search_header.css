@@ -1,0 +1,39 @@
+.search_logo{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+}
+.search_ul1{	
+	margin-left: 10%;
+	list-style: none;
+	text-decoration: none;
+}
+.search_ul2
+{
+	margin-left: 10%;
+	list-style: none;
+	text-decoration: none;
+}
+.search_li1{
+	height: 100%;
+	width: 7%;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+}
+.search_li1:hover{
+	color: orange;
+}
+.search_li2{
+	height: 100%;
+	width: 7%;
+	float: right;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+}
+.search_li2:hover{
+	color: orange;
+}

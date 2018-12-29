@@ -1,0 +1,39 @@
+.index_logo{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+}
+.index_ul1{	
+	margin-left: 10%;
+	list-style: none;
+	text-decoration: none;
+}
+.index_ul2
+{
+	margin-left: 10%;
+	list-style: none;
+	text-decoration: none;
+}
+.li1{
+	height: 100%;
+	width: 7%;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+}
+.li1:hover{
+	color: orange;
+}
+.li2{
+	height: 100%;
+	width: 7%;
+	float: right;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+}
+.li2:hover{
+	color: orange;
+}

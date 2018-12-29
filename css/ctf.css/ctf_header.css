@@ -1,0 +1,39 @@
+.ctf_logo{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+}
+.ctf_ul1{	
+	margin-left: 10%;
+	list-style: none;
+	text-decoration: none;
+}
+.ctf_ul2
+{
+	margin-left: 10%;
+	list-style: none;
+	text-decoration: none;
+}
+.ctf_li1{
+	height: 100%;
+	width: 7%;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+}
+.ctf_li1:hover{
+	color: orange;
+}
+.ctf_li2{
+	height: 100%;
+	width: 7%;
+	float: right;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+}
+.ctf_li2:hover{
+	color: orange;
+}
